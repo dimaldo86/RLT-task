@@ -1,0 +1,39 @@
+.card {
+    width: 300px;
+    height: auto;
+    color: var(--light);
+    border: 1px solid var(--secondary);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 2px 14px 8px 0px rgba(73, 76, 78, 0.3);
+    }
+
+    &__img {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: var(--radius);
+            border-top-right-radius: var(--radius);
+        }
+    }
+
+    &__content {
+        padding: 10px;
+    }
+
+    &__count {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+
+        span {
+            padding: 8px;
+            border: 1px solid var(--secondary);
+        }
+    }
+}

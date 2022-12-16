@@ -1,0 +1,15 @@
+.cards {
+    background: var(--primary);
+    border: 1px solid var(--secondary);
+    border-radius: var(--radius);
+    height: 100%;
+
+    &__container {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+}
